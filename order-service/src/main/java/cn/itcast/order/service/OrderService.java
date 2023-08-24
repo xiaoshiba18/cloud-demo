@@ -27,6 +27,7 @@ public class OrderService {
         order.setUser(restTemplate.getForObject(url, User.class));
        */
         // 4.返回
+        //测试分支合并
         User user = userClient.findById(order.getUserId());
         order.setUser(user);
 
